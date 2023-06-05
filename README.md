@@ -1,2 +1,2 @@
 # dictionary-app
-A Dictionary App that utilizes a dictionary API and the completion feature in OpenAI.
+A dictionary app that utilizes a dictionary API and the completion feature in OpenAI.

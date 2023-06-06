@@ -1,0 +1,28 @@
+.dictionary__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.dictionary__header-themes {
+  display: flex;
+}
+.dictionary__header-themes__select {
+  appearance: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.dictionary__header-themes__select:focus {
+  outline: 0;
+}
+.dictionary__header-themes__arrow {
+  margin-left: 16px;
+  align-self: center;
+}
+.dictionary_header-themes_divider {
+  background-color: var(--lineBreak);
+  margin: 0 16px 0 16px;
+  width: 1px;
+  height: 32px;
+}

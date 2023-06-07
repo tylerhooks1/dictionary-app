@@ -1,14 +1,15 @@
-import React from "react";
-import "./header.css";
-import { Switch } from "@chakra-ui/react";
+import React, { useContext } from "react";
 import { Container } from "@chakra-ui/react";
 import logo from "../../assets/logo.svg";
 import moon from "../../assets/icon-moon.svg";
+import { Switch } from "@chakra-ui/react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const Header = () => {
+  const [theme, setTheme] = useContext(ThemeContext);
   return (
     <Container>
-      <div className="dictionary__header">
+      <div className={`dictionary__header ${theme}`}>
         <img
           src={logo}
           alt="logo"
@@ -25,8 +26,22 @@ const Header = () => {
             </select>
           </div>
           <span className="dictionary_header-themes__divider" />
-          <Switch size="md" alignSelf="center" marginRight={1.5} />
-          <img src={moon} alt="moon" height={20} width={20} />
+          <Switch
+            size="md"
+            alignSelf="center"
+            marginRight={2.5}
+            onChange={() =>
+              setTheme((curr) => (curr === "light" ? "dark" : "light"))
+            }
+            checked={theme}
+          />
+          <img
+            src={moon}
+            alt="moon"
+            height={20}
+            width={20}
+            style={{ fill: `#f4f4f4` }}
+          />
         </div>
       </div>
     </Container>

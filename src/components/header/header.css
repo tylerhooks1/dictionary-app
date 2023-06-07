@@ -2,25 +2,37 @@
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  margin-bottom: 24px;
+}
+.dictionary__header-logo {
+  fill: var(--lineBreak);
 }
 .dictionary__header-themes {
   display: flex;
 }
 .dictionary__header-themes__select {
-  appearance: none;
   border: none;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+  margin-left: 12px;
+  align-self: center;
 }
-.dictionary__header-themes__select:focus {
+.dictionary__header-themes__select select {
+  appearance: none;
+}
+.dictionary__header-themes__select:after {
+  margin-left: 16px;
+  outline: 0;
+  content: url("../../assets/icon-arrow-down.svg");
+}
+.dictionary__header-themes__select select:focus {
   outline: 0;
 }
 .dictionary__header-themes__arrow {
-  margin-left: 16px;
   align-self: center;
 }
-.dictionary_header-themes_divider {
+.dictionary_header-themes__divider {
   background-color: var(--lineBreak);
   margin: 0 16px 0 16px;
   width: 1px;

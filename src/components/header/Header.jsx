@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Container } from "@chakra-ui/react";
 import logo from "../../assets/logo.svg";
 import moon from "../../assets/icon-moon.svg";
@@ -7,9 +7,12 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 
 const Header = () => {
   const [theme, setTheme] = useContext(ThemeContext);
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <Container>
-      <div className={`dictionary__header ${theme}`}>
+      <div className="dictionary__header">
         <img
           src={logo}
           alt="logo"

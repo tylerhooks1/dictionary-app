@@ -7,12 +7,14 @@ import { ThemeContextProvider } from "./contexts/ThemeContext";
 function App() {
   return (
     <ThemeContextProvider>
-      <Container>
-        <Header />
-        <Search />
-        <Word />
-        <Content />
-      </Container>
+      <div className="bg">
+        <Container>
+          <Header />
+          <Search />
+          <Word />
+          <Content />
+        </Container>
+      </div>
     </ThemeContextProvider>
   );
 }

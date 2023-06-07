@@ -1,7 +1,8 @@
 .dictionary__header {
   display: flex;
+  background-color: var(--background-color);
   justify-content: space-between;
-  margin-top: 24px;
+  padding-top: 24px;
   margin-bottom: 24px;
 }
 .dictionary__header-logo {

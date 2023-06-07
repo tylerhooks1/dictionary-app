@@ -6,5 +6,11 @@
   --lightBackgroundColor: #ffff;
   --lightTextColor: #2d2d2d;
   --lightSearchBackground: #f4f4f4;
-  --darkBackgroundColor: #050505;
+  --darkbackgroundColor: ;
+}
+.light {
+  --background-color: #ffff;
+}
+.dark {
+  --background-color: #050505;
 }

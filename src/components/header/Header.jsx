@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { Container } from "@chakra-ui/react";
 import Switch from "react-switch";
 import { ThemeContext } from "../../contexts/ThemeContext";

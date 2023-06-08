@@ -17,7 +17,6 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  margin-left: 12px;
   align-self: center;
 }
 .dictionary__header-themes__select select {
@@ -27,6 +26,7 @@
   font-family: var(--font-family);
   font-size: 14px;
   text-align: right;
+  font-weight: 700;
 }
 .dictionary__header-themes__select:after {
   margin-left: 16px;
@@ -36,9 +36,8 @@
 .dictionary__header-themes__select select:focus {
   outline: 0;
 }
-
 .dictionary_header-themes__divider {
-  background-color: var(--lineBreak);
+  background-color: var(--divider);
   margin: 0 16px 0 16px;
   width: 1px;
   height: 32px;
@@ -46,7 +45,6 @@
 .dictionary__header-themes__switch {
   margin-right: 12px;
 }
-
 .dictionary__header-themes__moonIcon {
   align-self: center;
 }

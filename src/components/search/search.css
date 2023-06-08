@@ -1,6 +1,8 @@
 .dictionary__search {
   display: flex;
   justify-content: center;
+  color: var(--text-color);
+  margin-bottom: 24px;
 }
 .dictionary__search input,
 .dictionary__search img {
@@ -12,9 +14,14 @@
   border-bottom-left-radius: 16px;
   width: 327px;
   height: 49px;
+  caret-color: var(--purple);
 }
 .dictionary__search input::placeholder {
   color: var(--text-color);
+}
+.dictionary__search input,
+.dictionary__search input::placeholder {
+  font-weight: 700;
 }
 .dictionary__search input:focus {
   outline: 0;

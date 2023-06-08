@@ -1,16 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap");
 :root {
   --purple: #a445ed;
   --error: #ff5252;
   --lineBreak: #979797;
   --contentSecion-text: #757575;
-  --lightBackgroundColor: #ffff;
-  --lightTextColor: #2d2d2d;
-  --lightSearchBackground: #f4f4f4;
-  --darkbackgroundColor: ;
+  --heading-l-size: 64px;
+  --heading-l-line-height: 77px;
+  --heading-m-size: 24px;
+  --heading-m-line-height: 29px;
+  --heading-body-s-m-line-height: 24px;
+  --heading-s-size: 20px;
+  --body-m-size: 18px;
+  --body-s-line-height: 17px;
+  --body-s-size: 14px;
 }
 .light {
   --background-color: #ffff;
+  --text-color: #2d2d2d;
+  --search-background: #f4f4f4;
 }
 .dark {
   --background-color: #050505;
+  --text-color: #ffff;
+  --search-background: #1f1f1f;
+}
+.sans-serif {
+  --font-family: "Inter", sans-serif;
+}
+.serif {
+  --font-family: "Lora", serif;
+}
+.mono {
+  --font-family: "Inconsolata", monospace;
 }

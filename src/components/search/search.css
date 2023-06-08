@@ -4,13 +4,17 @@
 }
 .dictionary__search input,
 .dictionary__search img {
-  background-color: #f4f4f4;
+  background-color: var(--search-background);
   padding: 14px;
 }
 .dictionary__search input {
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   width: 327px;
+  height: 49px;
+}
+.dictionary__search input::placeholder {
+  color: var(--text-color);
 }
 .dictionary__search input:focus {
   outline: 0;

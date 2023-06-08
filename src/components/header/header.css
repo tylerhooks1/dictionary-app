@@ -10,6 +10,7 @@
 }
 .dictionary__header-themes {
   display: flex;
+  align-items: center;
 }
 .dictionary__header-themes__select {
   border: none;
@@ -21,6 +22,11 @@
 }
 .dictionary__header-themes__select select {
   appearance: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 14px;
+  text-align: right;
 }
 .dictionary__header-themes__select:after {
   margin-left: 16px;
@@ -30,12 +36,17 @@
 .dictionary__header-themes__select select:focus {
   outline: 0;
 }
-.dictionary__header-themes__arrow {
-  align-self: center;
-}
+
 .dictionary_header-themes__divider {
   background-color: var(--lineBreak);
   margin: 0 16px 0 16px;
   width: 1px;
   height: 32px;
+}
+.dictionary__header-themes__switch {
+  margin-right: 12px;
+}
+
+.dictionary__header-themes__moonIcon {
+  align-self: center;
 }

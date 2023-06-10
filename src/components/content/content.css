@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 29px;
-  padding: 0 1rem;
 }
 .dictionary__content__header-title {
   flex-direction: row;
@@ -20,36 +19,43 @@
   font-size: var(--body-m-size);
   font-weight: 400;
 }
-.dictionary__content-noun {
+.dictionary__content-noun,
+.dictionary__content-verb {
   color: var(--text-color);
+  margin-bottom: 32px;
 }
-.dictionary__content-heading-noun {
+.dictionary__content-heading {
   display: flex;
   align-items: center;
   color: var(--text-color);
   margin-bottom: 44px;
   text-transform: lowercase;
 }
-.dictionary__content-heading-noun p {
+.dictionary__content-heading p {
   font-weight: 700;
   font-style: italic;
 }
-.dictionary__content-heading-noun span {
+.dictionary__content-heading span {
   width: 95%;
   height: 1px;
   margin-left: 16px;
+}
+.dictionary__content-source {
+  border-top-color: var(--divider);
+  border-top: 1px;
+  border-width: 100%;
+}
+.dictionary__content-heading span {
   background-color: var(--divider);
 }
 
 .dictionary__content__list-noun li {
-  margin-left: 22px;
-  list-style: inside;
   list-style-type: none;
 }
 .dictionary__content__list-noun li::before {
   content: "•";
+  margin-right: 20px;
   color: var(--purple);
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
 }
